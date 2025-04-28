@@ -1,74 +1,47 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Link, Calendar, Users, Settings } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
-
-const setupSteps = [
-  {
-    icon: <Link className="h-8 w-8 text-white" />,
-    title: "Connect Your Channels",
-    description: "Link WhatsApp or Telegram accounts"
-  },
-  {
-    icon: <Users className="h-8 w-8 text-white" />,
-    title: "Build Knowledge Base",
-    description: "We'll learn about your business"
-  },
-  {
-    icon: <Calendar className="h-8 w-8 text-white" />,
-    title: "Setup Integrations",
-    description: "Connect your tools and CRM"
-  },
-  {
-    icon: <Settings className="h-8 w-8 text-white" />,
-    title: "Go Live",
-    description: "Your AI assistant is ready"
-  }
-];
+import { ArrowRight } from 'lucide-react';
 
 const CTASection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-marguru-900 to-marguru-800 text-white">
+    <section className="py-20 bg-gradient-to-br from-marguru-500 to-marguru-600 text-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Get Started in Minutes
-          </h2>
-          <p className="text-lg mb-8 text-gray-300">
-            Follow these simple steps to transform your business communications with Marguru
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {setupSteps.map((step, index) => (
-            <Card key={index} className="bg-white/10 border-white/20 hover:bg-white/15 transition-colors">
-              <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-marguru-500 to-marguru-600 flex items-center justify-center">
-                  {step.icon}
-                </div>
-                <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-                <p className="text-gray-300">{step.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
         <div className="max-w-3xl mx-auto text-center">
-          <h3 className="text-2xl md:text-3xl font-bold mb-6">
-            Ready to Transform Your Business Communications?
-          </h3>
-          <p className="text-lg mb-8 text-gray-300">
-            Join thousands of businesses using Marguru to automate customer interactions and deliver exceptional service.
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Start Your AI Assistant Journey Today
+          </h2>
+          <p className="text-lg mb-8 text-white/90">
+            Experience the future of business communications with Marguru's AI assistant. Get started in minutes with our simple setup process.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="bg-white text-marguru-900 hover:bg-gray-100 text-lg py-6 px-8">
+            <Button className="bg-white text-marguru-900 hover:bg-gray-100 text-lg py-6 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
               Get Started Free
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" className="text-white border-white hover:bg-white/10 text-lg py-6 px-8">
+            <Button variant="outline" className="text-white border-white hover:bg-white/10 text-lg py-6 px-8 rounded-xl">
               Book a Demo
             </Button>
+          </div>
+          
+          <div className="mt-12 grid grid-cols-2 gap-4">
+            <div className="bg-white/20 backdrop-blur-sm p-5 rounded-xl">
+              <h3 className="font-bold text-xl mb-2">Basic Plan</h3>
+              <p className="text-3xl font-bold mb-2">$4.99<span className="text-sm font-normal">/mo</span></p>
+              <p className="text-sm mb-4">Perfect for individuals and small businesses</p>
+              <Button className="w-full bg-white text-marguru-900 hover:bg-gray-100">
+                Select Plan
+              </Button>
+            </div>
+            
+            <div className="bg-white/10 border-2 border-white backdrop-blur-sm p-5 rounded-xl shadow-glow">
+              <h3 className="font-bold text-xl mb-2">Pro Plan</h3>
+              <div className="text-3xl font-bold mb-2">$19.99<span className="text-sm font-normal">/mo</span></div>
+              <p className="text-sm mb-4">For companies and multiple team members</p>
+              <Button className="w-full bg-white text-marguru-900 hover:bg-gray-100">
+                Select Plan
+              </Button>
+            </div>
           </div>
         </div>
       </div>
