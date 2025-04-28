@@ -59,6 +59,21 @@ const HeroSection = () => {
                       <p>Let me check the schedule... Yes, tomorrow at 3 PM is available! Can I get your name and contact number?</p>
                     </div>
                   </div>
+                  <div className="flex items-end">
+                    <div className="bg-white rounded-2xl p-3 max-w-xs shadow-sm">
+                      <p>My name is Jane Smith and my number is 555-123-4567.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-end justify-end">
+                    <div className="bg-gradient-to-r from-marguru-500 to-marguru-600 rounded-2xl p-3 text-white max-w-xs shadow-sm">
+                      <p>Great! I've booked your appointment for tomorrow at 3 PM. You'll receive a confirmation message shortly. Anything else you need?</p>
+                    </div>
+                  </div>
+                  <div className="flex items-end">
+                    <div className="bg-white rounded-2xl p-3 max-w-xs shadow-sm">
+                      <p>No, that's all. Thank you!</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -68,17 +83,17 @@ const HeroSection = () => {
         <div className="mt-16 text-center">
           <p className="text-gray-600 mb-6">Trusted by businesses worldwide</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center">
-            <div className="bg-white/50 backdrop-blur-sm rounded-lg p-6 shadow-sm">
-              <div className="text-marguru-600 font-bold text-xl">COMPANY</div>
+            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-sm hover:shadow-md transition-all">
+              <div className="text-marguru-700 font-bold text-xl">SalonHub</div>
             </div>
-            <div className="bg-white/50 backdrop-blur-sm rounded-lg p-6 shadow-sm">
-              <div className="text-marguru-600 font-bold text-xl">BRAND</div>
+            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-sm hover:shadow-md transition-all">
+              <div className="text-marguru-700 font-bold text-xl">RealtyPro</div>
             </div>
-            <div className="bg-white/50 backdrop-blur-sm rounded-lg p-6 shadow-sm">
-              <div className="text-marguru-600 font-bold text-xl">STARTUP</div>
+            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-sm hover:shadow-md transition-all">
+              <div className="text-marguru-700 font-bold text-xl">SpaTech</div>
             </div>
-            <div className="bg-white/50 backdrop-blur-sm rounded-lg p-6 shadow-sm">
-              <div className="text-marguru-600 font-bold text-xl">ENTERPRISE</div>
+            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-sm hover:shadow-md transition-all">
+              <div className="text-marguru-700 font-bold text-xl">GourmetAI</div>
             </div>
           </div>
         </div>

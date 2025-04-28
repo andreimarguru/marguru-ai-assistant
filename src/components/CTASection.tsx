@@ -42,7 +42,7 @@ const CTASection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {setupSteps.map((step, index) => (
-            <Card key={index} className="bg-white/10 border-white/20">
+            <Card key={index} className="bg-white/10 border-white/20 hover:bg-white/15 transition-colors">
               <CardContent className="p-6 text-center">
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-marguru-500 to-marguru-600 flex items-center justify-center">
                   {step.icon}
